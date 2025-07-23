@@ -8,6 +8,7 @@ pandas = "*"
 scikit-learn = "==1.4.2"
 matplotlib = "*"
 pyarrow = "*"
+seaborn = "*"
 
 [dev-packages]
 ipykernel = "*"
