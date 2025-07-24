@@ -55,14 +55,15 @@ The `EDA.ipynb` notebook includes:
 
 ### 4. Output
 
-Feature Importances
-Bar plot showing top 20 features influencing trip duration.
+- **Feature Importances**  
+  Bar plot showing top 20 features influencing trip duration.
 
-Duration Distribution
-KDE plot comparing trip durations between trips with missing and known dropoff areas.
+- **Duration Distribution**  
+  KDE plot comparing trip durations between trips with missing and known dropoff areas.
 
-Daily Averages
-Bar chart showing how average trip durations vary across weekdays.
+- **Daily Averages**  
+  Bar chart showing how average trip durations vary across weekdays.
 
-👤 Author
-Developed by Dario Dang.
+## 👤 Author
+
+- Developed by **Dario Dang**
