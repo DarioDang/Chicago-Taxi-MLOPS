@@ -29,11 +29,11 @@ The ingest_data.py script fetches taxi trip data for a specific month and saves 
     python ingest_data.py --year [enter year]  --month [enter month]
     ```
 
-    --year: Year of the data (e.g., 2023)
+--year: Year of the data (e.g., 2023)
 
-    --month: Month of the data (1–12)
+--month: Month of the data (1–12)
 
-    The script will save the file as: ../Dataset/chicago_taxi_[year]_[month].parquet
+The script will save the file as: ../Dataset/chicago_taxi_[year]_[month].parquet
 
 ### 3. Exploratory Data Analysis 
 
@@ -45,11 +45,11 @@ The EDA.ipynb notebook includes:
 
 🔍 Feature extraction:
 
-    Trip distance
+Trip distance
 
-    Time of day
+Time of day
 
-    Day of week
+Day of week
 
 Weekend indicator
 
@@ -59,9 +59,9 @@ Weekend indicator
 
 📈 Visualizations:
 
-    KDE plot comparing trip durations (missing vs known dropoff area)
+KDE plot comparing trip durations (missing vs known dropoff area)
 
-    Bar plot for average trip duration by day of week
+Bar plot for average trip duration by day of week
 
 
 ### 4. Output
