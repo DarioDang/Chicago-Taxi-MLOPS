@@ -96,6 +96,15 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 ### 3. Run the notebook
 Launch ```experiment-tracking.ipynb``` in Jupyter and execute all cells.
 
+### 4. Downloading the Production Model
+
+Once the best model is promoted to the **Production** stage using MLflow, we retrieve both the trained model and its associated preprocessor from the MLflow artifacts.
+
+The model (e.g., a RandomForest or XGBoost regressor) is downloaded into the `models/rf_model/` directory. The preprocessing object, which includes feature names or transformation logic, is also downloaded and saved as `models/preprocessor.b`.
+
+This allows us to load the exact version of the model and preprocessing steps later for inference or deployment, ensuring consistency and reproducibility.
+
+
 ## 👤 Author
 Developed by Dario Dang
 
