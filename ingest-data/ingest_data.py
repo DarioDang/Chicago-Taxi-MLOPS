@@ -8,7 +8,7 @@ import argparse
 import requests
 
 # Command line arguments
-parser = argparse.ArgumentParser(description="Download Chicago Taxi data and save to OneDrive.")
+parser = argparse.ArgumentParser(description="Download Chicago Taxi data and save to local path.")
 
 # Arguments for year and month
 parser.add_argument("--year", type=int, required=True, help="Year to download (e.g., 2023)")
