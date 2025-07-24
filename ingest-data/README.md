@@ -5,10 +5,12 @@ This part focuses on **downloading**, **preprocessing**, and **exploring** the C
 ---
 
 ## 📁 Folder Structure
+```
 ingest-data/
-├── ingest_data.py # Script to download monthly data and save as Parquet
-├── EDA.ipynb # Jupyter notebook for data preprocessing, visualization, and modeling
-├── ../Dataset/ # Output directory where downloaded Parquet files are saved.
+├── ingest_data.py       # Script to download monthly data and save as Parquet
+├── EDA.ipynb            # Jupyter notebook for data preprocessing, visualization, and modeling
+├── ../Dataset/          # Output directory where downloaded Parquet files are saved
+```
 
 ## 🚀 Getting Started
 
