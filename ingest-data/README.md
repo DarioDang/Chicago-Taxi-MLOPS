@@ -29,16 +29,13 @@ The `ingest_data.py` script fetches taxi trip data for a specific month and save
 
 ```bash
 python ingest_data.py --year [enter year] --month [enter month]
-    ```
-
---year: Year of the data (e.g., 2023)
-
---month: Month of the data (1–12)
-
-The script will save the file as: 
-```css
-../Dataset/chicago_taxi_[year]_[month].parquet
 ```
+
+- year: Year of the data (e.g., 2023)
+
+- month: Month of the data (1–12)
+
+The script will save the file as: ../Dataset/chicago_taxi_[year]_[month].parquet
 
 ### 3. Exploratory Data Analysis 
 
