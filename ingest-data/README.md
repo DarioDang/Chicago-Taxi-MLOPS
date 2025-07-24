@@ -22,18 +22,23 @@ pipenv shell
 ```
 
 ### 2. Download Monthly Data
-The ingest_data.py script fetches taxi trip data for a specific month and saves it as a Parquet file under the Dataset/ folder.
-✅ Usage:
 
-    ```bash
-    python ingest_data.py --year [enter year]  --month [enter month]
+The `ingest_data.py` script fetches taxi trip data for a specific month and saves it as a Parquet file under the `Dataset/` folder.
+
+✅ **Usage:**
+
+```bash
+python ingest_data.py --year [enter year] --month [enter month]
     ```
 
 --year: Year of the data (e.g., 2023)
 
 --month: Month of the data (1–12)
 
-The script will save the file as: ../Dataset/chicago_taxi_[year]_[month].parquet
+The script will save the file as: 
+```css
+../Dataset/chicago_taxi_[year]_[month].parquet
+```
 
 ### 3. Exploratory Data Analysis 
 
