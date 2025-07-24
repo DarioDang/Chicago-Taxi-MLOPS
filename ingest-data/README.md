@@ -37,31 +37,20 @@ The script will save the file as: ../Dataset/chicago_taxi_[year]_[month].parquet
 
 ### 3. Exploratory Data Analysis 
 
-The EDA.ipynb notebook includes:
+The `EDA.ipynb` notebook includes:
 
-✅ Timestamp parsing and duration feature engineering
-
-📉 Data cleaning and filtering for valid trips
-
-🔍 Feature extraction:
-
-Trip distance
-
-Time of day
-
-Day of week
-
-Weekend indicator
-
-🤖 Model training using RandomForestRegressor
-
-🔢 Feature importance analysis
-
-📈 Visualizations:
-
-KDE plot comparing trip durations (missing vs known dropoff area)
-
-Bar plot for average trip duration by day of week
+- ✅ Timestamp parsing and duration feature engineering  
+- 📉 Data cleaning and filtering for valid trips  
+- 🔍 Feature extraction:
+  - Trip distance  
+  - Time of day  
+  - Day of week  
+  - Weekend indicator  
+- 🤖 Model training using `RandomForestRegressor`  
+- 🔢 Feature importance analysis  
+- 📈 Visualizations:
+  - KDE plot comparing trip durations (missing vs known dropoff area)  
+  - Bar plot for average trip duration by day of week  
 
 
 ### 4. Output
