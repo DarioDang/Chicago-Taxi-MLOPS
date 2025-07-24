@@ -1,6 +1,6 @@
 # 🚕 Chicago Taxi Data Ingestion and EDA
 
-This part focuses on **downloading**, **preprocessing**, and **exploring** the Chicago Taxi Trips dataset. It includes a Python script for automated data ingestion and a Jupyter notebook for performing exploratory data analysis (EDA) and training a basic machine learning model.
+This part focuses on **downloading**, **preprocessing**, and **exploring** the Chicago Taxi Trips dataset. It includes a Python script for automated data ingestion and a Jupyter notebook for performing exploratory data analysis (EDA) and training a basic machine learning model to explore features importances with might useful for later used.
 
 ---
 
