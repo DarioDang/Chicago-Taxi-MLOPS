@@ -82,8 +82,10 @@ MLflow client functions are used to:
 ## 🧰 How to Run
 
 ### 1. Install dependencies
+Make sure you have Python 3.x and the required packages installed. You can install dependencies using:
 ```bash
-pip install mlflow scikit-learn pandas xgboost hyperopt
+pipenv shell 
+pipenv lock
 ```
 
 ### 2.Start the MLflow UI
