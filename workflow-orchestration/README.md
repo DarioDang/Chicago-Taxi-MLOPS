@@ -5,6 +5,13 @@ This repository contains an end-to-end Machine Learning pipeline built using Mag
 The goal of this pipeline is to train and evaluate different models to predict taxi trip durations in Chicago and deploy the best-performing model.
 
 ---
+## 🧭 Pipeline Overview
+
+<p align="center">
+  <img src="image/mage-illustrate.png" alt="Pipeline Overview" width="600"/>
+</p>
+
+---
 ## 📁 Project Structure
 
 ```bash
