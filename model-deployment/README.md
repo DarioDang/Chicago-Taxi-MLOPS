@@ -70,7 +70,7 @@ python test.py
 
 ```json
 {
-  "duration": ...,
+  "duration": "...",
   "model_id": "..."
 }
 ```
