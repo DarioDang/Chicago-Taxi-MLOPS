@@ -36,7 +36,7 @@ S3 Logging: Logs the best model and metadata to MLflow and S3.
 │   ├── pipelines/                 # Mage pipeline definitions
 │   ├── presenters/                # Optional presentation logic
 │   ├── training/                  # Model training logic
-│   ├── utils/                     # Utility functions (e.g., S3 logging)
+│   ├── utils/                     # Utility functions (e.g., S3 logging,clean,transform,split)
 │   ├── __init__.py
 │   ├── design.yaml
 │   ├── metadata.yaml
