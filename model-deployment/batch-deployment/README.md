@@ -78,23 +78,18 @@ python predict.py
 ## 🗃️ Database Output
 The batch prediction results are saved into a PostgreSQL table: ride_predictions. The schema includes:
 
-```trip_id```: unique UUID
+| Column Name              | Type      | Description                                  |
+| ------------------------ | --------- | -------------------------------------------- |
+| `trip_id`                | UUID      | Unique ID for the ride                       |
+| `pickup_community_area`  | INTEGER   | Origin community area                        |
+| `dropoff_community_area` | INTEGER   | Destination community area                   |
+| `trip_start_timestamp`   | TIMESTAMP | Start time of the ride                       |
+| `fare`                   | FLOAT     | Calculated fare                              |
+| `trip_total`             | FLOAT     | Total cost including extra fees              |
+| `trip_miles`             | FLOAT     | Distance traveled in miles                   |
+| `predicted_duration`     | FLOAT     | Model prediction for trip duration (minutes) |
+| `created_at`             | TIMESTAMP | Time the record was inserted                 |
 
-```pickup_community_area```: integer
-
-```dropoff_community_area```: integer
-
-```trip_start_timestamp```: timestamp
-
-```fare```: float
-
-```trip_total```: float
-
-```trip_miles```: float
-
-```predicted_duration```: float
-
-```created_at```: timestamp of insertion
 
 ## ✨ Why This Project Stands Out
 This project showcases a real-world batch inference system that combines:
@@ -110,6 +105,8 @@ This project showcases a real-world batch inference system that combines:
 - Dockerized service architecture
 
 It demonstrates end-to-end skills in model serving, workflow orchestration, task scheduling, and system integration, making it a strong example of practical MLOps and data engineering for production environments.
+
+
 
 ## 👤 Author
 Dario Dang
