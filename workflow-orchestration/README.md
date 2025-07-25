@@ -114,9 +114,12 @@ pipenv run mage start mlops
 ```bash
 mlflow server \
   --backend-store-uri sqlite:///mlflow.db \
-  --default-artifact-root [your-aws-s3-artifact] \
   --host 0.0.0.0 --port 5000
 ```
+
+### 3. Run the pipelines:
+ -  ```data preparation``` pipeline to get a full preprocessing data 
+ -  ```training``` pipeline to hyperparmeter tuning, training best model on the entire dataset and logged into MLFLOW local artifact or AWS s3 bucket. (image above). 
 
 ### 🧪 Model Registry Logic
 Only RandomForestRegressor is:
