@@ -80,6 +80,12 @@ docker compose up --build -d
 python evidently-metrics-calculation.py
 ```
 
+4. Run the Grafana UI for dashboard 
+- Make sure the postgres database have been created and connected to Grafana
+    (If not, connect manually by adding new connection on Grafana)
+
+- The connection to Postgres Database in on ```config/grafana_datasources```
+
 ### 📌 Monitoring Metrics Tracked
 
 | Panel Title               | Description                                 |
