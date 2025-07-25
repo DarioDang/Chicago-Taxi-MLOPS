@@ -28,7 +28,7 @@ model-monitoring/
 2. Run ```evidently ui``` on bash to start the evidently user interface 
 
 <p align="center">
-  <img src="image/Evidently_UI.png" alt="Evidently UI Dashboard" width="800"/>
+  <img src="image/Evidently_UI.png" alt="Evidently UI Dashboard" width="1200"/>
 </p>
 
 - Used to compute data quality, missing values, and distribution drift.
@@ -45,7 +45,7 @@ model-monitoring/
 - Make a prediction on ```February_Chicago``` dataset for calculate prediction drift.
 
 <p align="center">
-  <img src="image/Grafana_Dashboard.png" alt="Grafana Dashboard Overview" width="800"/>
+  <img src="image/Grafana_Dashboard.png" alt="Grafana Dashboard Overview" width="1200"/>
 </p>
 
 - Visualizes prediction drift, missing values, and feature drift using time-series plots.
@@ -93,14 +93,14 @@ python evidently-metrics-calculation.py
 
 ## ✨ Highlights & Why It Matters
 This project showcases real-world ML model monitoring infrastructure with:
-    - Automated daily validation
-    - Drift and anomaly detection
-    - Real-time dashboards
-    - Dockerized deployment for reproducibility
-    - It highlights strong skills in:
-    - MLOps using MLflow, Docker, Evidently, and Grafana
-    - Production-grade ML model validation
-    - Cloud-native artifact handling (S3-based workflows)
+- Automated daily validation
+- Drift and anomaly detection
+- Real-time dashboards
+- Dockerized deployment for reproducibility
+- It highlights strong skills in:
+- MLOps using MLflow, Docker, Evidently, and Grafana
+- Production-grade ML model validation
+- Cloud-native artifact handling (S3-based workflows)
 
 ## 👤 Author
 
