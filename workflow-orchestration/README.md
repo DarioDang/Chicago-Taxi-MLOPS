@@ -8,20 +8,27 @@ The goal of this pipeline is to train and evaluate different models to predict t
 ## 📁 Project Structure
 
 ```bash
-.
-├── pipelines/
-│   └── mlops/                      # Main Mage pipeline with dynamic training blocks
-│       ├── ...
+├── workflow-orchestration/        # Mage project root
 │
-├── mlops/                          # Custom modules and transformers
-│   └── utils/
-│       ├── s3_logging.py           # Logs models to MLflow and optionally registers in S3
-│       └── ...
+├── mlartifacts/                   # Local artifacts (if not using S3)
 │
-├── .mage_data/                     # Mage runtime storage (auto-generated)
-│   └── mlops/                      # Stores variable outputs per pipeline
+├── mlops/                         # Core Python modules for Mage blocks
+│   ├── data_preparation/          # Feature engineering and preprocessing
+│   ├── pipelines/                 # Mage pipeline definitions
+│   ├── presenters/                # Optional presentation logic
+│   ├── training/                  # Model training logic
+│   ├── utils/                     # Utility functions (e.g., S3 logging)
+│   ├── __init__.py
+│   ├── design.yaml
+│   ├── metadata.yaml
+│   ├── settings.yaml
+│   └── requirements.txt
 │
-├── README.md
+├── mlruns/                        # MLflow local experiment logs                 
+│
+├── mlflow.db                      # Local MLflow metadata database
+│
+└── README.md                      # Project overview
 ```
 
 ### 🚀 Key Features
