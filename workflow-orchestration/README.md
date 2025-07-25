@@ -11,6 +11,18 @@ The goal of this pipeline is to train and evaluate different models to predict t
   <img src="image/mage-illustrate.png" alt="Pipeline Overview" width="1200"/>
 </p>
 
+#### This DAG includes:
+
+Data Input: training_set.
+
+Model Loading: Dynamically loads multiple models.
+
+Hyperparameter Tuning: Evaluates and tunes models via MLflow.
+
+Best Model Selection: Picks the best-performing model based on RMSE.
+
+S3 Logging: Logs the best model and metadata to MLflow and S3.
+
 ---
 ## 📁 Project Structure
 
