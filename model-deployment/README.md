@@ -22,6 +22,8 @@ aws-model-deployment/
 
 - `predict.py` downloads the model and vectorizer at runtime using `mlflow` and `boto3`.
 
+- `test.py` input the nre/ unseen data and sent the request into Flask to receive a prediction and model id have been used. 
+
 - The Flask web server exposes a `/predict` endpoint, which:
     1. Parses the input ride data
     2. Applies preprocessing
