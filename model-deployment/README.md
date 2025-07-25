@@ -66,10 +66,13 @@ python test.py
 
 #### Expected response:
 
-```{
+```json
+{
   "duration": ...,
   "model_id": "..."
-}```
+}
+```
+
 
 ## 👤 Author
 Dario Dang
