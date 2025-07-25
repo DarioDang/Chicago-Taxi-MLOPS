@@ -21,18 +21,18 @@ batch-prediction/
 
 1. Connects to the **MLflow Tracking Server** (local or remote)
 2. Loads the **latest model version** from the **Production stage** via the model registry:
-   - e.g. `models:/taxi_duration_predictor/Production`
+   - e.g. `models:/taxi_duration_predictor/Production`.
 3. Automatically resolves the associated `run_id` and **downloads** the `dict_vectorizer.bin` from the run's `preprocessing` artifact directory.
-4. Applies feature engineering + transformation
-5. Makes predictions and outputs them
+4. Applies feature engineering + transformation.
+5. Makes predictions and outputs them.
 
 
 ## 🔧 Prerequisites
 
 - Python 3.8+
-- MLflow Tracking Server running at `http://127.0.0.1:5000`
-- Model named `taxi_duration_predictor` is registered and promoted to `"Production"` stage
-- Artifacts are stored locally or on a remote backend accessible to MLflow
+- MLflow Tracking Server running at `http://127.0.0.1:5000`.
+- Model named `randomforest-reg-v2` is registered and promoted to `"Production"` stage.
+- Artifacts are stored locally or on a remote backend accessible to MLflow.
 
 ## 🗃️ Notes on Artifact Structure
 This script expects:
@@ -49,6 +49,7 @@ You may adapt test.py or build a batch input loader to feed data into predict.py
 
 ## 👤 Author
 Dario Dang
+
 
 
 
