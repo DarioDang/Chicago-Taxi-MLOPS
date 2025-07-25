@@ -1,0 +1,18 @@
+training_set:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 600
+  project: training
+  repo_path: /Users/dazieldang/Desktop/Project/Chicago-Taxi-MLOPS/workflow-orchestration/mlops/training
+  settings:
+    build: {}
+training_set_1:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 600
+  project: training
+  repo_path: /Users/dazieldang/Desktop/Project/Chicago-Taxi-MLOPS/workflow-orchestration/mlops/training
+  settings:
+    build: {}

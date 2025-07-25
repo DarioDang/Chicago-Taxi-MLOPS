@@ -1,0 +1,7 @@
+projects:
+  'data_preparation ':
+    path: 'data_preparation '
+  training:
+    path: training
+  unit_0_setup: {}
+  unit_3_observability: {}

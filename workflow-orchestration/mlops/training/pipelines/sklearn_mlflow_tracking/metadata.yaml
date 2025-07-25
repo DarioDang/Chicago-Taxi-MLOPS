@@ -1,0 +1,122 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: training/global_data_products/training_set.py
+    global_data_product:
+      uuid: training_set
+  downstream_blocks:
+  - hyperparameter_tuning/mlflow
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Training_set
+  retry_config: null
+  status: executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: training_set
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration:
+    dynamic: true
+    file_source:
+      path: training/custom/load_models/mlflow.py
+  downstream_blocks:
+  - hyperparameter_tuning/mlflow
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load models/mlflow
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: load_models/mlflow
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: training/transformers/hyperparameter_tuning/mlflow.py
+  downstream_blocks:
+  - sklearn_trainning_best_model
+  - s3_logging_best_models
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: hyperparameter_tuning/mlflow
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_models/mlflow
+  - training_set
+  uuid: hyperparameter_tuning/mlflow
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: training/data_exporters/sklearn_trainning_best_model.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: sklearn_trainning_best_model
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - hyperparameter_tuning/mlflow
+  uuid: sklearn_trainning_best_model
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: training/data_exporters/s3_logging_best_models.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: s3_logging_best_models
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - hyperparameter_tuning/mlflow
+  uuid: s3_logging_best_models
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-07-13 23:14:41.284481+00:00'
+data_integration: null
+description: 'Train the models from sklearn library using MLFlow tracking the RMSE
+  of each model. '
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: sklearn_mlflow_tracking
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: sklearn_mlflow_tracking
+variables_dir: /Users/dazieldang/.mage_data/training
+widgets: []
