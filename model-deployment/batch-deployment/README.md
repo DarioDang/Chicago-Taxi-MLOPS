@@ -96,6 +96,20 @@ The batch prediction results are saved into a PostgreSQL table: ride_predictions
 
 ```created_at```: timestamp of insertion
 
+## ✨ Why This Project Stands Out
+This project showcases a real-world batch inference system that combines:
+
+- Machine learning deployment with MLflow
+
+- Modular data engineering using Prefect
+
+- Reliable scheduling using APScheduler
+
+- Automated PostgreSQL data logging
+
+- Dockerized service architecture
+
+It demonstrates end-to-end skills in model serving, workflow orchestration, task scheduling, and system integration, making it a strong example of practical MLOps and data engineering for production environments.
 
 ## 👤 Author
 Dario Dang
