@@ -8,7 +8,7 @@ The goal of this pipeline is to train and evaluate different models to predict t
 ## 🧭 Pipeline Overview
 
 <p align="center">
-  <img src="image/mage-illustrate.png" alt="Pipeline Overview" width="600"/>
+  <img src="image/mage-illustrate.png" alt="Pipeline Overview" width="800"/>
 </p>
 
 ---
