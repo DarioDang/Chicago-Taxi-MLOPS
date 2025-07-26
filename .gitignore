@@ -25,3 +25,4 @@ mlartifacts/
 mlruns
 model-deployment/aws-model-deployment/aws_credentials.yaml
 model-deployment/web-services-mlflow
+Pipfile.lock
