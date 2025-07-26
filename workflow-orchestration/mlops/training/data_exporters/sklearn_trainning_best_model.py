@@ -4,7 +4,7 @@ from pandas import Series
 from scipy.sparse._csr import csr_matrix
 from sklearn.base import BaseEstimator
 
-from mlops.utils.logging import track_experiment  
+from mlops.utils.logging_register import track_experiment_and_register  
 
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
@@ -30,15 +30,19 @@ def train(
     model.fit(X, y)
 
     # Log to MLflow
-    track_experiment(
+    track_experiment_and_register(
         model=model,
         dict_vectorizer=dv,
         hyperparameters=hyperparameters,
         training_set=X,
         training_targets=y,
         run_name=f"final_{model_name}",
+        registered_model_name="randomforest-reg-v2",   # <-- Set this only for RF
+        register_stage="Production",                # <-- Promote only RF
         block_uuid=kwargs.get("block_uuid"),
         pipeline_uuid=kwargs.get("pipeline_uuid"),
+        experiment_name="chicago-taxi-experiment",  
+        verbosity=True,
     )
 
     return model, model_info
