@@ -1,5 +1,5 @@
 # Chicago Taxi MLOps Best Practice
-A production-ready machine learning workflow for predicting taxi trip durations using the Chicago Taxi dataset. The application includes data preprocessing, model loading from MLflow (hosted in S3), a Flask API for prediction, and comprehensive testing.
+This folder contains best practices for testing and maintaining a machine learning project using the Chicago Taxi dataset. It includes well-structured **unit tests**, **integration tests**, and development automation through a **Makefile**. The goal is to ensure high code quality and reproducibility when building and maintaining a Flask-based ML prediction service.
 
 ---
 
