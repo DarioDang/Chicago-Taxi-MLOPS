@@ -1,14 +1,18 @@
 # Chicago Taxi Batch Deployment 🚖
-This repository contains the batch deployment pipeline for predicting taxi trip durations in Chicago using a trained machine learning model. The system is designed for realistic data generation, scheduled inference, and database storage using tools like Prefect, Flask, MLflow, and PostgreSQL.
+This repository contains the batch deployment pipeline for predicting taxi trip durations in Chicago using a trained machine learning model. The system is designed for realistic data generation, scheduled inference, and database storage and real time dashboard monitoring using tools like Prefect, Flask, MLflow, PostgreSQL and Grafana.
 
 ---
 
 ## 📁 Project Structure
 ```bash
 batch-deployment/
-├── docker-compose.yaml # Docker configuration for required services
-├── predict.py # Flask app with Prefect flow to predict and log trip durations
-├── README.md # Project documentation
+├── docker-compose.yml              # Docker configuration for Postgres, Adminer, and Grafana
+├── predict.py                      # Flask app with Prefect flow to predict and log trip durations
+├── README.md                       # Project documentation
+├── config/
+│   └── grafana_dashboards.yaml     # Grafana provisioning config that loads dashboards 
+├── dashboards/
+│   └── batch_predictions.json       # Grafana dashboard JSON with panel definitions 
 ```
 
 ---
@@ -28,6 +32,21 @@ batch-deployment/
 - **UUID-based trip ID** is generated for each record.
 - Runs every 5 minutes as a **Prefect 2.0 flow** (can be scheduled through Prefect Cloud/Server).
 - Offers a simple **Flask endpoint** for status check.
+- The functions was developed to run randomly 1 - 10 predictions per 2 minutes to more align with real case scenario
+- The **grafana** dashboard was then build to monitor the prediction include:
+
+| Column Name            | Description                                                   |
+| ---------------------- | ------------------------------------------------------------- |
+| `ride prediction`      | Time series chart showing predicted ride durations over time. |
+| `count of ride`        | Bar chart showing the number of rides every 2 minutes.        |
+| `distribution of fare` | Histogram showing the distribution of fare per mile.          |
+| `top PU_DO`            | Bar chart showing the most common pickup/dropoff pairs.       |
+| `latest prediction`    | Table displaying the 5 most recent predictions.               |
+
+
+<p align="center">
+  <img src="image/grafana_dashboard.png" alt="Grafana Dashboard Overview" width="1200"/>
+</p>
 
 ---
 
@@ -104,12 +123,17 @@ This project showcases a real-world batch inference system that combines:
 
 - Dockerized service architecture
 
-It demonstrates end-to-end skills in model serving, workflow orchestration, task scheduling, and system integration, making it a strong example of practical MLOps and data engineering for production environments.
+- Grafana real - time prediction monitor dashboard
+
+It demonstrates end-to-end skills in model serving, workflow orchestration, task scheduling, system integration, and real-time monitoring with Grafana—making it a strong example of practical MLOps and data engineering in a production-ready environment.
 
 
 
 ## 👤 Author
+
 Dario Dang
+
+ML Engineer | MLOps Enthusiast | DataOps Practitioner
 
 
 
