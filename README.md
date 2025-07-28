@@ -60,7 +60,7 @@ You can download monthly Parquet files using the automated script in [`ingest-da
 |-------------------|----------------------------------------------------|
 | Orchestration     | [Mage](https://github.com/mage-ai/mage-ai)         |
 | Tracking & Registry | [MLflow](https://mlflow.org/)                    |
-| Deployment        | Flask, Docker, AWS S3                              |
+| Deployment        | Local, Flask, Docker, AWS S3                       |
 | Monitoring        | Evidently, Grafana, PostgreSQL                     |
 | Testing & Quality | Pytest, Ruff, Black, Makefile                      |
 
