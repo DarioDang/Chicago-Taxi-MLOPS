@@ -84,49 +84,6 @@ pipenv install --dev
 
 ## 🔧 Main Components
 
-### 📥 1. [Ingestion + EDA](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/ingest-data)
-Download monthly Parquet files
-
-Generate EDA plots (duration distribution, feature importances)
-
-### 🧪 2. [Experiment Tracking](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/experiment-tracking)
-Train and tune multiple regressors
-
-Log runs, metrics, and models to MLflow
-
-Register and promote best model to production
-
-### ⚙️ 3. [Workflow Orchestration](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/workflow-orchestration)
-Mage DAG trains models, registers them, and stores best one in S3
-
-Modular blocks: preprocessing, tuning, training, tracking
-
-### 🛰 4. [Model Deployment](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/model-deployment)
-Flask API that:
-
-Downloads production model from MLflow
-
-Preprocesses input JSON
-
-Returns predicted trip duration
-
-### 📈 5. [Model Monitoring](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/model-monitoring)
-Detect drift in predictions using Evidently
-
-Store inference data in PostgreSQL
-
-Visualize metrics in Grafana
-
-### 6. 🧪 [Testing & Best Practices](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/best-practice)
-Unit and integration tests using Pytest
-
-Auto-linting with Ruff
-
-Auto-formatting with Black
-
-Makefile for automation
-
-
 | Component                                                                                                     | Description                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 📥 [Ingestion + EDA](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/ingest-data)                   | - Download monthly Parquet files <br> - Generate EDA plots (duration distribution, feature importances)                                  |
