@@ -186,20 +186,29 @@ def insert_into_db(data, prediction):
 
 @flow(name="scheduled_batch_prediction")
 def scheduled_job():
-    ride = generate_biased_ride()
-    features = prepare_features(ride)
-    prediction = predict_duration(features)
-    insert_into_db(ride, prediction)
-    print(f"[{datetime.now()}] Prediction saved: {prediction} mins")
+    num_rides = random.randint(1, 10)
+    print(f"[{datetime.now()}] Generating {num_rides} rides...")
+
+    for i in range(num_rides):
+        ride = generate_biased_ride()
+        features = prepare_features(ride)
+
+        if features.empty:
+            print(f"Ride {i+1}: Skipped due to insufficient feature data")
+            continue
+
+        prediction = predict_duration(features)
+        insert_into_db(ride, prediction)
+        print(f"Ride {i+1}: Prediction saved: {prediction} mins")
 
 # Schedule job
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=lambda: scheduled_job(), trigger="interval", minutes=5, next_run_time=datetime.now())
+scheduler.add_job(func=lambda: scheduled_job(), trigger="interval", minutes=2, next_run_time=datetime.now())
 scheduler.start()
 
 @app.route("/")
 def home():
-    return "Batch prediction service running every 5 minutes."
+    return "Batch prediction service running every 2 minutes."
 
 if __name__ == "__main__":
     app.run(port=9696)
