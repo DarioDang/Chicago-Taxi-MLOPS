@@ -31,7 +31,7 @@ The project uses the **Chicago Taxi Trips** dataset from the City of Chicago’s
   - Fare, trip miles, trip total
 - Target variable: **Trip Duration**
 
-You can download monthly Parquet files using the automated script in `ingest-data/ingest_data.py`.
+You can download monthly Parquet files using the automated script in [`ingest-data/ingest_data.py`](https://github.com/DarioDang/Chicago-Taxi-MLOPS/blob/main/ingest-data/ingest_data.py).
 
 ---
 
@@ -79,7 +79,7 @@ cd Chicago-Taxi-MLOPS
 
 ```bash
 pipenv shell
-pipenv install --dev
+pipenv install 
 ```
 
 ## 🔧 Main Components
