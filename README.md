@@ -84,7 +84,7 @@ pipenv install --dev
 
 ## 🔧 Main Components
 
-### 📥 1. Ingestion + EDA (ingest-data/) [See more](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/ingest-data)
+### 📥 1. [Ingestion + EDA (ingest-data/)](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/ingest-data)
 Download monthly Parquet files
 
 Generate EDA plots (duration distribution, feature importances)
