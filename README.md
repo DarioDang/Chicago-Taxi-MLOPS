@@ -126,6 +126,17 @@ Auto-formatting with Black
 
 Makefile for automation
 
+
+| Component                                                                                                     | Description                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 📥 [Ingestion + EDA](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/ingest-data)                   | - Download monthly Parquet files <br> - Generate EDA plots (duration distribution, feature importances)                                  |
+| 🧪 [Experiment Tracking](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/experiment-tracking)       | - Train and tune multiple regressors <br> - Log runs, metrics, and models to MLflow <br> - Register and promote best model to production |
+| ⚙️ [Workflow Orchestration](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/workflow-orchestration) | - Mage DAG trains models, registers them, and stores best one in S3 <br> - Modular blocks: preprocessing, tuning, training, tracking     |
+| 🛰 [Model Deployment](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/aws-model-deployment)         | - Flask API to serve predictions <br> - Downloads production model from MLflow <br> - Preprocesses input JSON and returns duration       |
+| 📈 [Model Monitoring](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/model-monitoring)             | - Detect drift in predictions using Evidently <br> - Store inference data in PostgreSQL <br> - Visualize metrics in Grafana              |
+| 🧪 [Testing & Best Practices](https://github.com/DarioDang/Chicago-Taxi-MLOPS/tree/main/best-practice)        | - Unit and integration tests with Pytest <br> - Auto-linting with Ruff <br> - Auto-formatting with Black <br> - Makefile for automation  |
+
+
 ## 👤 Author
 Dario Dang
 
