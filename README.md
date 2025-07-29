@@ -101,20 +101,20 @@ The following table lists the main dependencies and their versions used in this 
 | Package        | Specified in Pipfile | Installed Version |
 |----------------|----------------------|-------------------|
 | pandas         | *                    | 2.3.1             |
-| scikit-learn   | ==1.4.2              | 1.4.2             |
+| scikit-learn   | 1.4.2                | 1.4.2             |
 | matplotlib     | *                    | 3.9.4             |
 | pyarrow        | *                    | 19.0.1            |
 | xgboost        | *                    | 2.1.4             |
 | seaborn        | *                    | 0.13.2            |
 | hyperopt       | *                    | 0.2.7             |
-| numpy          | ==1.26.4             | 1.26.4            |
-| pip            | ==24.0               | 24.0              |
-| flask          | >=2.2.2              | 3.1.1             |
-| mlflow         | ==2.22.0             | 2.22.0            |
+| numpy          | 1.26.4               | 1.26.4            |
+| pip            | 24.0                 | 24.0              |
+| flask          | 2.2.2                | 3.1.1             |
+| mlflow         | 2.22.0               | 2.22.0            |
 | boto3          | *                    | 1.39.15           |
 | apscheduler    | *                    | 3.11.0            |
 | psycopg        | *                    | 3.2.9             |
-| evidently      | ==0.6.7              | 0.6.7             |
+| evidently      | 0.6.7                | 0.6.7             |
 | prefect        | *                    | 3.4.10            |
 | ipykernel      | *                    | 6.15.0            |
 | mage-ai        | *                    | 0.9.76            |
