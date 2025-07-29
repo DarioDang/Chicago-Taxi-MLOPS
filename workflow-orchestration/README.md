@@ -110,12 +110,14 @@ Ensure your AWS credentials are configured (~/.aws/credentials or env vars).
 pipenv run mage start mlops
 ```
 
-#### 2. Start MLflow tracking server:
+#### 2. Start MLflow tracking UI/server:
 ```bash
 mlflow server \
   --backend-store-uri sqlite:///mlflow.db \
   --host 0.0.0.0 --port 5000
 ```
+
+**Note**: If cannot access port 5000, try to open with private window instead. 
 
 ### 3. Run the pipelines:
  -  ```data preparation``` pipeline to get a full preprocessing data 
